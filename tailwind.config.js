@@ -2,10 +2,14 @@ module.exports = {
   purge: ['@/pages/**/*.{js,ts,jsx,tsx}', '@/components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'Helvetica', 'sans-serif'],
+      },
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 }
