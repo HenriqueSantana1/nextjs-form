@@ -15,7 +15,7 @@ export default function Layout({ children, title }: Props) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="min-h-screen flex justify-center py-10 px-4">
+      <div className="flex h-full">
         <main>{children}</main>
       </div>
     </>
